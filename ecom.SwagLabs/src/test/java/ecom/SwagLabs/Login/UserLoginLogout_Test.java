@@ -14,7 +14,7 @@ import ecom.SwagLabs.objRepo.HomePage;
 import ecom.SwagLabs.objRepo.LoginPage;
 
 public class UserLoginLogout_Test extends BaseClass {
-	@Test(groups = "SysT")
+	@Test(groups = {"SysT","Pos"})
 	public void userLoginLogout_Test() throws Exception {
 		LoginPage lp = new LoginPage(driver);
 

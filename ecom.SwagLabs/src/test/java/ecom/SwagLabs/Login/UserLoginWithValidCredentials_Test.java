@@ -10,7 +10,7 @@ import ecom.SwagLabs.genericUtility.ExcelUtility;
 import ecom.SwagLabs.objRepo.LoginPage;
 
 public class UserLoginWithValidCredentials_Test extends BaseClass{
-	@Test(groups = "SmT")
+	@Test(groups = {"SmT","Pos"})
 	public void userLoginWithValidCredentials_Test() throws Exception {
 		LoginPage lp = new LoginPage(driver);
 		ExcelUtility eu = new ExcelUtility();

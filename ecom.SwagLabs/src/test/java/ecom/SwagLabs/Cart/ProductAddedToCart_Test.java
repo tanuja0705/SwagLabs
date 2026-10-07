@@ -15,7 +15,7 @@ import ecom.SwagLabs.objRepo.LoginPage;
 import ecom.SwagLabs.objRepo.ProductPage;
 
 public class ProductAddedToCart_Test extends BaseClass {
-	@Test(groups = "IT")
+	@Test(groups = {"IT","Pos"})
 	public void verifyProductAddedToCart_Test() throws Exception {
 		LoginPage lp = new LoginPage(driver);
 

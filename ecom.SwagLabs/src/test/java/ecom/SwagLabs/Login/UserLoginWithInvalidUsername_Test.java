@@ -13,7 +13,7 @@ import ecom.SwagLabs.baseClass.BaseClass;
 import ecom.SwagLabs.objRepo.LoginPage;
 
 public class UserLoginWithInvalidUsername_Test extends BaseClass {
-	@Test(groups = "FT")
+	@Test(groups = {"FT","Nev"})
 	public void userLoginWithInvalidUsername_Test() throws Exception {
 		LoginPage lp = new LoginPage(driver);
 

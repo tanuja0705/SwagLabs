@@ -14,7 +14,7 @@ import ecom.SwagLabs.objRepo.HomePage;
 import ecom.SwagLabs.objRepo.LoginPage;
 
 public class OpenCartSection_Test extends BaseClass{
-		@Test(groups = "FT")
+		@Test(groups = {"FT","Pos"})
 		public void openCartSection_Test() throws Exception {
 			LoginPage lp = new LoginPage(driver);
 
