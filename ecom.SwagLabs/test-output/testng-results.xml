@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[User didn't logged in with invalid credentials]]>
+    </line>
+    <line>
+      <![CDATA[User logged in successfully with valid credentials]]>
+    </line>
+    <line>
+      <![CDATA[Product Added successfully]]>
+    </line>
+    <line>
+      <![CDATA[User logged in successfully with valid credentials]]>
+    </line>
+    <line>
+      <![CDATA[User logged in successfully with valid credentials]]>
+    </line>
+    <line>
+      <![CDATA[User successfully navigated to cart section]]>
+    </line>
+    <line>
+      <![CDATA[User logged in successfully with valid credentials]]>
+    </line>
+    <line>
+      <![CDATA[User logged out successfully]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-10-07T15:19:15 IST" name="Suite" finished-at="2026-10-07T15:19:43 IST" duration-ms="28396">
+    <groups>
+      <group name="SysT">
+        <method signature="UserLoginLogout_Test.userLoginLogout_Test()[pri:0, instance:ecom.SwagLabs.Login.UserLoginLogout_Test@7d9d0818]" name="userLoginLogout_Test" class="ecom.SwagLabs.Login.UserLoginLogout_Test"/>
+      </group> <!-- SysT -->
+      <group name="SmT">
+        <method signature="UserLoginWithValidCredentials_Test.userLoginWithValidCredentials_Test()[pri:0, instance:ecom.SwagLabs.Login.UserLoginWithValidCredentials_Test@7c137fd5]" name="userLoginWithValidCredentials_Test" class="ecom.SwagLabs.Login.UserLoginWithValidCredentials_Test"/>
+      </group> <!-- SmT -->
+      <group name="IT">
+        <method signature="ProductAddedToCart_Test.verifyProductAddedToCart_Test()[pri:0, instance:ecom.SwagLabs.Cart.ProductAddedToCart_Test@231f98ef]" name="verifyProductAddedToCart_Test" class="ecom.SwagLabs.Cart.ProductAddedToCart_Test"/>
+      </group> <!-- IT -->
+      <group name="FT">
+        <method signature="OpenCartSection_Test.openCartSection_Test()[pri:0, instance:ecom.SwagLabs.Cart.OpenCartSection_Test@183ec003]" name="openCartSection_Test" class="ecom.SwagLabs.Cart.OpenCartSection_Test"/>
+        <method signature="UserLoginWithInvalidUsername_Test.userLoginWithInvalidUsername_Test()[pri:0, instance:ecom.SwagLabs.Login.UserLoginWithInvalidUsername_Test@6e9a5ed8]" name="userLoginWithInvalidUsername_Test" class="ecom.SwagLabs.Login.UserLoginWithInvalidUsername_Test"/>
+      </group> <!-- FT -->
+    </groups>
+    <test started-at="2026-10-07T15:19:15 IST" name="Test" finished-at="2026-10-07T15:19:43 IST" duration-ms="28396">
+      <class name="ecom.SwagLabs.Login.UserLoginLogout_Test">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:ecom.SwagLabs.Login.UserLoginLogout_Test@7d9d0818]" started-at="2026-10-07T15:19:38 IST" name="launchBrowser" finished-at="2026-10-07T15:19:41 IST" duration-ms="3106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="userLoginLogout_Test()[pri:0, instance:ecom.SwagLabs.Login.UserLoginLogout_Test@7d9d0818]" started-at="2026-10-07T15:19:41 IST" name="userLoginLogout_Test" finished-at="2026-10-07T15:19:43 IST" duration-ms="1222" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[User logged in successfully with valid credentials]]>
+            </line>
+            <line>
+              <![CDATA[User logged out successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userLoginLogout_Test -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:ecom.SwagLabs.Login.UserLoginLogout_Test@7d9d0818]" started-at="2026-10-07T15:19:43 IST" name="closeBrowser" finished-at="2026-10-07T15:19:43 IST" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- ecom.SwagLabs.Login.UserLoginLogout_Test -->
+      <class name="ecom.SwagLabs.Login.UserLoginWithValidCredentials_Test">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:ecom.SwagLabs.Login.UserLoginWithValidCredentials_Test@7c137fd5]" started-at="2026-10-07T15:19:30 IST" name="launchBrowser" finished-at="2026-10-07T15:19:33 IST" duration-ms="3210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="userLoginWithValidCredentials_Test()[pri:0, instance:ecom.SwagLabs.Login.UserLoginWithValidCredentials_Test@7c137fd5]" started-at="2026-10-07T15:19:33 IST" name="userLoginWithValidCredentials_Test" finished-at="2026-10-07T15:19:34 IST" duration-ms="750" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[User logged in successfully with valid credentials]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userLoginWithValidCredentials_Test -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:ecom.SwagLabs.Login.UserLoginWithValidCredentials_Test@7c137fd5]" started-at="2026-10-07T15:19:34 IST" name="closeBrowser" finished-at="2026-10-07T15:19:34 IST" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- ecom.SwagLabs.Login.UserLoginWithValidCredentials_Test -->
+      <class name="ecom.SwagLabs.Cart.ProductAddedToCart_Test">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:ecom.SwagLabs.Cart.ProductAddedToCart_Test@231f98ef]" started-at="2026-10-07T15:19:22 IST" name="launchBrowser" finished-at="2026-10-07T15:19:25 IST" duration-ms="3139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyProductAddedToCart_Test()[pri:0, instance:ecom.SwagLabs.Cart.ProductAddedToCart_Test@231f98ef]" started-at="2026-10-07T15:19:25 IST" name="verifyProductAddedToCart_Test" finished-at="2026-10-07T15:19:30 IST" duration-ms="4444" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[User logged in successfully with valid credentials]]>
+            </line>
+            <line>
+              <![CDATA[Product Added successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyProductAddedToCart_Test -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:ecom.SwagLabs.Cart.ProductAddedToCart_Test@231f98ef]" started-at="2026-10-07T15:19:30 IST" name="closeBrowser" finished-at="2026-10-07T15:19:30 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- ecom.SwagLabs.Cart.ProductAddedToCart_Test -->
+      <class name="ecom.SwagLabs.Cart.OpenCartSection_Test">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:ecom.SwagLabs.Cart.OpenCartSection_Test@183ec003]" started-at="2026-10-07T15:19:34 IST" name="launchBrowser" finished-at="2026-10-07T15:19:37 IST" duration-ms="3167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="openCartSection_Test()[pri:0, instance:ecom.SwagLabs.Cart.OpenCartSection_Test@183ec003]" started-at="2026-10-07T15:19:37 IST" name="openCartSection_Test" finished-at="2026-10-07T15:19:38 IST" duration-ms="848" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[User logged in successfully with valid credentials]]>
+            </line>
+            <line>
+              <![CDATA[User successfully navigated to cart section]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openCartSection_Test -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:ecom.SwagLabs.Cart.OpenCartSection_Test@183ec003]" started-at="2026-10-07T15:19:38 IST" name="closeBrowser" finished-at="2026-10-07T15:19:38 IST" duration-ms="287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- ecom.SwagLabs.Cart.OpenCartSection_Test -->
+      <class name="ecom.SwagLabs.Login.UserLoginWithInvalidUsername_Test">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:ecom.SwagLabs.Login.UserLoginWithInvalidUsername_Test@6e9a5ed8]" started-at="2026-10-07T15:19:15 IST" name="launchBrowser" finished-at="2026-10-07T15:19:19 IST" duration-ms="4414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="userLoginWithInvalidUsername_Test()[pri:0, instance:ecom.SwagLabs.Login.UserLoginWithInvalidUsername_Test@6e9a5ed8]" started-at="2026-10-07T15:19:19 IST" name="userLoginWithInvalidUsername_Test" finished-at="2026-10-07T15:19:22 IST" duration-ms="2463" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[User didn't logged in with invalid credentials]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- userLoginWithInvalidUsername_Test -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:ecom.SwagLabs.Login.UserLoginWithInvalidUsername_Test@6e9a5ed8]" started-at="2026-10-07T15:19:22 IST" name="closeBrowser" finished-at="2026-10-07T15:19:22 IST" duration-ms="364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- ecom.SwagLabs.Login.UserLoginWithInvalidUsername_Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

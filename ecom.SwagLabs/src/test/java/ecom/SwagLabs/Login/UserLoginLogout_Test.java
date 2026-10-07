@@ -1,0 +1,46 @@
+package ecom.SwagLabs.Login;
+
+import java.io.FileInputStream;
+
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+import ecom.SwagLabs.baseClass.BaseClass;
+import ecom.SwagLabs.objRepo.HomePage;
+import ecom.SwagLabs.objRepo.LoginPage;
+
+public class UserLoginLogout_Test extends BaseClass {
+	@Test(groups = "SysT")
+	public void userLoginLogout_Test() throws Exception {
+		LoginPage lp = new LoginPage(driver);
+
+		FileInputStream fis = new FileInputStream("./src/test/resources/TestData.xlsx");
+		Workbook wb = WorkbookFactory.create(fis);
+
+		String un = wb.getSheet("LoginCredentials").getRow(1).getCell(0).toString();
+		String pwd = wb.getSheet("LoginCredentials").getRow(1).getCell(1).toString();
+		
+		lp.login(un, pwd);
+
+		/*lp.getUn().clear();
+		lp.getUn().sendKeys(un);
+		lp.getPwd().clear();
+		lp.getPwd().sendKeys(pwd);
+		lp.getLoginB().click();*/
+
+		//Assert.assertEquals(driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).isDisplayed(), true);
+		Assert.assertEquals(driver.getCurrentUrl().contains("inventory"), true);
+		Reporter.log("User logged in successfully with valid credentials", true);
+
+		HomePage hp = new HomePage(driver);
+		hp.getHamburger().click();
+		hp.getLogout().click();
+
+		Assert.assertEquals(driver.findElement(By.id("login-button")).isDisplayed(), true);
+		Reporter.log("User logged out successfully", true);
+	}
+}
