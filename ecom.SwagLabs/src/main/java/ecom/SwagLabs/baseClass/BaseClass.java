@@ -8,15 +8,18 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import ecom.SwagLabs.genericUtility.FileUtility;
 
 public class BaseClass {
 	public WebDriver driver;
+	@Parameters("browser")
 	@BeforeClass(alwaysRun = true)
-	public void launchBrowser() throws Exception {
+	public void launchBrowser(@Optional("chrome") String browser) throws Exception {
 		FileUtility fu = new FileUtility();
-		String browser = fu.readDatafromPropertyFile("browser");
+		//String browser =fu.readDatafromPropertyFile("browser");
 		
 		if(browser.equalsIgnoreCase("chrome"))
 			driver = new ChromeDriver();
